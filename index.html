@@ -1,199 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HZC | Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
-        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
-        <p class="cabecalho__perfil">Bruno Lopez</p>
-        <button class="cabecalho__notificacao" aria-label="Notificação"><i></i></button>
+<html>
+    <header>
+        <title>Alura Plus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
     </header>
-    <nav class="menu-lateral menu-lateral--ativo">
-        <img src="assets/img/logo.svg" alt="Logotipo da HCZ" class="menu-lateral__logo">
-        <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo" >Início</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--videos" >Vídeos</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--picos" >Picos</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--integrantes" >Integrantes</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--camisas" >Camisas</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
-    </nav>
-    <main class="principal">
-        <h2 class="titulo-pagina">Início</h2>
-        <article class="cartao cartao--destaque destaque-video">
-            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--mobile">
-            <img src="assets/img/banner_1.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--desktop">
-            <div class="cartao__conteudo">
-                <p class="cartao__destaque">Vídeo em destaque</p>
-                <h3 class="cartao__titulo">HZC - Título</h3>
-                <p class="cartao__perfil">Bruno Lopes</p>
-                <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                <p class="cartao__info cartao__info--visualizacao">33 visualização</p>
-                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+    <body>
+        <section class="container principal">
+            <div class="container__caixa">
+                <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
+                <img src="img/Combo.png" alt="O combo+ é a junção do alura+ e o alura lingua" class="container__imagem">
+                <a href="www.alura.com.br" class="container__botao">Assine por 12x de R$ 120,00*</a>
+                <a href="www.alura.com.br" class="container__botao botao_secundario">Assinar somente o Alura+</a>
+                <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
             </div>
-        </article>
-        <article class="cartao cartao--recentes videos-recentes">
-            <h3 class="cartao__titulo">Videos recentes</h3>
-            <a href="#" class="cartao__link">Ver todos</a>
-            <ul class="cartao__lista">
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Bruno Lopez</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Bruno Lopez</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Bruno Lopez</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Bruno Lopez</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                    <p class="cartao__item-perfil">Bruno Lopez</p>
-                </li>
-            </ul>
-        </article>
-        <section class="secao secao-videos">
-            <h3 class="titulo-secao">Vídeos mais vistos</h3>
-            <article class="cartao">
-                <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">HZC - Título</h3>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-            <article class="cartao">
-                <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">HZC - Título</h3>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-            <article class="cartao">
-                <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">HZC - Título</h3>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-            <article class="cartao">
-                <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo">HZC - Título</h3>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-            <article class="cartao cartao--recentes produtos-recentes">
-                <h3 class="cartao__titulo">Videos recentes</h3>
-                <a href="#" class="cartao__link">Ver todos</a>
-                <ul class="cartao__lista">
-                    <li class="cartao__item">
-                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                        <p class="cartao__item-perfil">Bruno Lopez</p>
+        </section>
+
+        <section class="container secundario">
+            <img src="img/Plataformas.png" alt="Um monitor e um celular com alura plus aberto." class="secundario__imagem">
+            <div class="container__descricao">
+                <h2 class="descricao__titulo">Assista do seu jeito</h2>
+                <p class="descricao__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p>
+            </div>
+        </section>
+
+        <section class="container secundario">
+            <div class="container__descricao">
+                <p class="descricao__texto">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia e aprender inglês ou espanhol, onde e como quiser.</p>
+                <a href="www.alura.com.br" class="container__botao secundario__botao">Assinar o Combo+</a>
+            </div>
+            <img src="img/Telas.png" alt="Tela do alura plus e do alura lingua" class="secundaria__imagem">
+        </section>
+
+        <section class="container secundario">
+            <img src="img/Notebook.png" alt="Notebook mostrando o layout" class="secundario__imagem">
+            <div class="container__descricao">
+                <h2 class="descricao__titulo">Baixe seus cursos</h2>
+                <p class="descricao__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
+            </div>
+        </section>
+        <section class="dispositivos">
+            <div>
+                <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos</h2>
+                <ul class="dispositivos__lista">
+                    <li>
+                        <img src="img/tv.png" alt="icone de televisão">
+                        <h3 class="lista__item">TV</h3>
                     </li>
-                    <li class="cartao__item">
-                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                        <p class="cartao__item-perfil">Bruno Lopez</p>
+                    <li>
+                        <img src="img/computador.png" alt="icone do computador">
+                        <h3 class="lista__item">Computador</h3>
                     </li>
-                    <li class="cartao__item">
-                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                        <p class="cartao__item-perfil">Bruno Lopez</p>
-                    </li>
-                    <li class="cartao__item">
-                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                        <p class="cartao__item-perfil">Bruno Lopez</p>
-                    </li>
-                    <li class="cartao__item">
-                        <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                        <h4 class="cartao__item-titulo">HZC - Love machine</h4>
-                        <p class="cartao__item-perfil">Bruno Lopez</p>
+                    <li>
+                        <img src="img/celular.png" alt="icone do celular">
+                        <h3 class="lista__item">Telefone e Tablets</h3>
                     </li>
                 </ul>
-            </article>
-            <article class="cartao cartao--destaque destaque-produtos">
-                <img src="assets/img/banner-mobile_2.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--mobile">
-                <img src="assets/img/banner_2.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--desktop">
-                <div class="cartao__conteudo">
-                    <p class="cartao__destaque">Vídeo em destaque</p>
-                    <h3 class="cartao__titulo">HZC - Título</h3>
-                    <p class="cartao__perfil">Bruno Lopes</p>
-                    <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                    <p class="cartao__info cartao__info--visualizacao">33 visualização</p>
-                    <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
-                </div>
-            </article>
-            <section class="secao secao-produtos">
-                <h3 class="titulo-secao">Vídeos mais vistos</h3>
-                <article class="cartao">
-                    <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopes</p>
-                        <h3 class="cartao__titulo">HZC - Título</h3>
-                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                    </div>
-                </article>
-                <article class="cartao">
-                    <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopes</p>
-                        <h3 class="cartao__titulo">HZC - Título</h3>
-                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                    </div>
-                </article>
-                <article class="cartao">
-                    <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopes</p>
-                        <h3 class="cartao__titulo">HZC - Título</h3>
-                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                    </div>
-                </article>
-                <article class="cartao">
-                    <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopes</p>
-                        <h3 class="cartao__titulo">HZC - Título</h3>
-                        <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="Assistir agora"></button>
-                    </div>
-                </article>
-            </section>
+            </div>
         </section>
-    </main>
-<script src="index.js"></script>
-</body>
+        <footer class="rodape">
+            <img src="img/Logo.png" alt="Logo do alura+ " class="rodape__logo">
+            <ul class="rodape__lista">
+                <il class="lista__link">
+                    <a href="#">Idioma</a>
+                </il>
+                <il class="lista__link">
+                    <a href="#">Dispositivos Compatíveis</a>
+                </il>
+                <il class="lista__link">
+                    <a href="#">Contrato de Assinatura</a>
+                </il>
+                <il class="lista__link">
+                    <a href="#">Politica de Privacidade</a>
+                </il>
+                <il class="lista__link">
+                    <a href="#">Proteção de Dados no Brasil</a>
+                </il>
+                <il class="lista__link">
+                    <a href="#">Anuncios Personalizados</a>
+                </il>
+                <il class="lista__link">
+                    <a href="#">Ajuda</a>
+                </il>
+            </ul>
+            <p class="rodape__texto">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+            <p class="rodape__texto">Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
+        </footer>
+    </body>
 </html>
